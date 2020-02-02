@@ -1,3 +1,9 @@
+---
+...
+mathjax: true
+mathjax_autoNumber: true
+---
+
 ### Distilling the Knowledge in a Neural Network
 
 模型蒸馏是通过大模型的结果提升小模型预测准确率的方法。以此可以帮助我们减少线上模型部署的难度(减少内存，gpu,cpu 的使用)。
