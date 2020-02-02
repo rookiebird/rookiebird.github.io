@@ -5,7 +5,7 @@
 
 具体的做法如下:
 
-![Dark Mode](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/blog/dark-mode.gif)
+![Dark Mode](https://github.com/rookiebird/rookiebird.github.io/blob/master/screenshots/TeXt-card.png)
 
 1、训练大模型：先用hard target，也就是正常的label训练大模型。
 
