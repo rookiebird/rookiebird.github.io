@@ -5,7 +5,6 @@
 
 具体的做法如下:
 
-![images](screenshots/Distilling the Knowledge in a Neural Network.png)
 ![images](https://github.com/rookiebird/rookiebird.github.io/blob/master/screenshots/Distilling%20the%20Knowledge%20in%20a%20Neural%20Network.png)
 
 
