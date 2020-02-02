@@ -5,7 +5,7 @@
 
 具体的做法如下:
 
-![Dark Mode](https://github.com/rookiebird/rookiebird.github.io/blob/master/screenshots/TeXt-card.png)
+![images](screenshots/Distilling the Knowledge in a Neural Network.png)
 
 1、训练大模型：先用hard target，也就是正常的label训练大模型。
 
