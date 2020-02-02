@@ -21,10 +21,6 @@
 
 在模型蒸馏的时候，大模型的产生的soft target 是由温度T控制的。
 
-$$
-h_\theta(x)=g(\theta_0+\theta_1x_1+\theta_2x_2)
-$$
-
 $$soft\ target = \frac{exp(z_i/T)}{\sum_j exp(z_j/T)}$$
 
 通过调节温度能够控制soft target的平滑程度。使用soft target的原因可以看下面的解释：
