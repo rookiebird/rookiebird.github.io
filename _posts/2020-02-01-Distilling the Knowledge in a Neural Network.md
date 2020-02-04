@@ -5,7 +5,7 @@
 
 具体的做法如下:
 
-![images](screenshots/Distilling_the_Knowledge_in_a_Neural_Network.png)
+![images](https://raw.githubusercontent.com/rookiebird/rookiebird.github.io/master/screenshots/Distilling_the_Knowledge_in_a_Neural_Network.png)
 
 
 1、训练大模型：先用hard target，也就是正常的label训练大模型。
