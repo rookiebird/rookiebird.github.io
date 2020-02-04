@@ -1,6 +1,4 @@
 
-### Distilling the Knowledge in a Neural Network
-
 模型蒸馏是通过大模型的结果提升小模型预测准确率的方法。以此可以帮助我们减少线上模型部署的难度(减少内存，gpu,cpu 的使用)。
 
 具体的做法如下:
@@ -18,7 +16,7 @@
 
 一般认为，大模型比小模型能够描述复杂的问题,能够学得更复杂的模式。模型蒸馏能够让大模型学得的模式，间接的教给小模型
 
-#### soft target
+### soft target
 
 在模型蒸馏的时候，大模型的产生的soft target 是由温度T控制的。
 
@@ -26,12 +24,12 @@ $$soft\ target = \frac{exp(z_i/T)}{\sum_j exp(z_j/T)}$$
 
 通过调节温度能够控制soft target的平滑程度。使用soft target的原因可以看下面的解释：
 
-#### 信息量：
+### 信息量：
 
 hard target 包含的信息量（信息熵）很低，
 soft target包含的信息量大，拥有不同类之间关系的信息（比如同时分类驴和马的时候，尽管某张图片是马，但是soft target就不会像hard target 那样只有马的index处的值为1，其余为0，而是在驴的部分也会有概率，毕竟驴和马也是有点像的。）
 
-#### 软化：
+### 软化：
 
 但是如果我们的big model的输出为[0.001,0.149,0.85]，以这个为直接的学习目标，则最左边的类cross entropy的loss function中对于权重的更新贡献微乎其微，这样就起不到作用。把soft target软化（整体除以一个数值后再softmax），就可以达到0.1的数值。
 
